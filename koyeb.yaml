@@ -1,0 +1,9 @@
+name: my-telegram-bot
+source:
+  git:
+    url: https://github.com/jdmanuel21/Ludubot.git
+    branch: main
+run:
+  cmd: python app.py
+build:
+  builder: python
