@@ -5,6 +5,20 @@ import requests
 import uuid
 import urllib.request
 import tqdm
+import telegram
+
+bot_token = '6287740609:AAEolD1PgPf4cEzpf4ujroOqlFf21_zlE9s'
+
+webhook_url = 'https://bot-jdmanuel21.koyeb.app/'
+
+# Create a bot instance using the provided token
+
+bot = telegram.Bot(token=bot_token)
+
+# Set the webhook URL for the bot
+
+bot.setWebhook(url=webhook_url)
+
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
